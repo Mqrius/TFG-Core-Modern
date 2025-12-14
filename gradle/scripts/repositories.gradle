@@ -16,7 +16,7 @@ repositories {
         url "https://maven.bawnorton.com/releases"
     }
     // Mirror
-    maven { url "https://maven.enjarai.dev/mirrors" }
+    // maven { url "https://maven.enjarai.dev/mirrors" }
     maven {
         name 'CurseMaven'
         url 'https://cursemaven.com'
