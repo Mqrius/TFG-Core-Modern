@@ -18,8 +18,12 @@ import com.gregtechceu.gtceu.common.item.armor.QuarkTechSuite;
 public class QuarkTechSuiteMixin {
 
     @Inject(method = "supplyFood", at = @At("HEAD"), remap = false, cancellable = true)
-    private void tfg$preventQuarkFeedingWhenBleeding(IElectricItem item, Player player, CallbackInfoReturnable<Boolean> cir) {
-        if (player.getPersistentData().getBoolean("playerrevive:bleeding")) {
+    private void tfg$preventQuarkTechFeedingWhenBleeding(IElectricItem item, Player player, CallbackInfoReturnable<Boolean> cir) {
+        boolean isBleeding = player.getPersistentData().getBoolean("playerrevive:bleeding");
+        System.out.println("=== QUARKTECH MIXIN HIT === Player: " + player.getName().getString() + " Bleeding: " + isBleeding);
+        
+        if (isBleeding) {
+            System.out.println("=== CANCELING QUARKTECH FEED ===");
             cir.setReturnValue(false);
         }
     }
