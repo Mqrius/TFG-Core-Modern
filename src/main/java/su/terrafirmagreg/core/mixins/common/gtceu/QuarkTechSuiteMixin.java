@@ -19,7 +19,7 @@ public class QuarkTechSuiteMixin {
 
     @Inject(method = "supplyFood", at = @At("HEAD"), remap = false, cancellable = true)
     private void tfg$preventQuarkFeedingWhenBleeding(IElectricItem item, Player player, CallbackInfoReturnable<Boolean> cir) {
-        if (player.getPersistentData().getBoolean("playerrevive:bleeding") || player.level.isClientSide) {
+        if (player.getPersistentData().getBoolean("playerrevive:bleeding") || player.level().isClientSide) {
             cir.setReturnValue(false);
         }
     }
