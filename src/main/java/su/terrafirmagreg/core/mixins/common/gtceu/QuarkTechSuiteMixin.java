@@ -18,7 +18,7 @@ import com.gregtechceu.gtceu.common.item.armor.QuarkTechSuite;
 public class QuarkTechSuiteMixin {
 
     @Inject(method = "supplyFood", at = @At("HEAD"), remap = false, cancellable = true)
-    private void tfg$preventFeedingWhenBleeding(IElectricItem item, Player player, CallbackInfoReturnable<Boolean> cir) {
+    private void tfg$preventQuarkFeedingWhenBleeding(IElectricItem item, Player player, CallbackInfoReturnable<Boolean> cir) {
         if (player.getPersistentData().getBoolean("playerrevive:bleeding")) {
             cir.setReturnValue(false);
         }
