@@ -91,7 +91,7 @@
         "common.minecraft.SnifferEggBlockMixin",
         "common.sandworms.WormSignHandlerMixin",
         "common.simply_stacked_dimensions.TeleportHandlerMixin",
-        "common.sophisticated_backpacks.FeedingUpgradeWrapperMixin",
+        "common.sophisticatedbackpacks.FeedingUpgradeWrapperMixin",
         "common.species.BirtMixin",
         "common.species.CruncherMixin",
         "common.species.DeepfishMixin",
