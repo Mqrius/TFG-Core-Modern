@@ -45,6 +45,7 @@
         "common.firmalife.MixinFoodShelfBlockEntity",
         "common.firmalife.MixinGreenhousePortBlock",
         "common.flywheel.AnimatedBlazeBurnerMixin",
+        "common.fallingtrees.GenericTreeMixin",
         "common.grappling_hook.AirFrictionControllerMixin",
         "common.grappling_hook.GrappleControllerMixin",
         "common.greate.TieredCrushingRecipeMixin",
@@ -132,6 +133,7 @@
     ],
     "minVersion": "0.8",
     "package": "su.terrafirmagreg.core.mixins",
+    "mixinextras": {"minVersion": "0.5.0"},
     "injectors": {"defaultRequire": 1},
     "compatibilityLevel": "JAVA_17",
     "client": [
